@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask CORS Demo</title>
+  </head>
+  <body>
+    <h1>Flask CORS Demo</h1>
+    <p>This demonstrates Flask with CORS support</p>
+
+    <div id="api-result"></div>
+
+    <script>
+      // Test CORS-enabled API
+      fetch("/api/data")
+        .then((response) => response.json())
+        .then((data) => {
+          document.getElementById(
+            "api-result"
+          ).innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+        })
+        .catch((error) => {
+          console.error("CORS Error:", error);
+        });
+    </script>
+  </body>
+</html>
