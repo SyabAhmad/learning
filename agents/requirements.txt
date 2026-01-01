@@ -1,0 +1,8 @@
+flask
+crewai
+requests
+langchain
+groq
+langchain-groq
+python-dotenv
+litellm
