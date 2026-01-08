@@ -1,0 +1,8 @@
+flask
+flask-CORS
+flask-jwt-extended
+flask-restful
+flask-sqlalchemy
+psycopg2-binary
+python-dotenv
+boto3
