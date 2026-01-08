@@ -1,3 +1,8 @@
+"""
+Basic Template for Practice Scripts.
+Add your practice logic and functions here.
+"""
+
 # print("Computer")
 # print("*"*8)
 
@@ -124,7 +129,13 @@ crew = Crew(
     verbose=True
 )
 
-if __name__ == "__main__":
+def main():
+    """
+    Main function for the practice script.
+    """
     result = crew.kickoff()
     print("------Final Result------")
     print(result)
+
+if __name__ == "__main__":
+    main()

@@ -1,11 +1,24 @@
+"""
+Flask Application Entry Point.
+Initializes the Flask app, configures CORS, and registers blueprints.
+"""
+
+# Third-party imports
 from flask import Flask
 from flask_cors import CORS
+
+# Local module imports
 from config import Config
 from routes.api import api_blueprint
 from routes.web import web_blueprint
 
 def create_app():
-    """Create and configure Flask application"""
+    """
+    Application factory pattern to create and configure the Flask app.
+    
+    Returns:
+        Flask: The configured Flask application instance.
+    """
     app = Flask(__name__)
     app.config.from_object(Config)
 

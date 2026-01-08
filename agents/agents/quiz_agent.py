@@ -1,7 +1,15 @@
+"""
+Quiz Agent Configuration.
+Responsible for creating assessments and quizzes to evaluate learning.
+"""
+
+# Standard library imports
+import os
+
+# Third-party imports
+from dotenv import load_dotenv
 from crewai import Agent
 from crewai.llm import LLM
-import os
-from dotenv import load_dotenv
 
 load_dotenv()
 

@@ -1,4 +1,12 @@
+"""
+Web Routes Configuration.
+Serves the HTML frontend and informational pages.
+"""
+
+# Third-party imports
 from flask import render_template
+
+# Local module imports
 from . import web_blueprint
 
 @web_blueprint.route('/')

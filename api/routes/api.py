@@ -1,6 +1,14 @@
+"""
+API Routes Configuration.
+Handles data processing and secure endpoints for the system.
+"""
+
+# Third-party imports
 from flask import jsonify, request
-from . import api_blueprint
 from flask_cors import cross_origin
+
+# Local module imports
+from . import api_blueprint
 
 @api_blueprint.route('/data', methods=['GET'])
 @cross_origin()  # Enable CORS for this specific route
